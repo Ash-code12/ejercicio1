@@ -121,12 +121,22 @@ flex-basis: 45;
     padding:16px 30px ;
     border-radius: 30px;
 }
+.btn--negro{
+    background-color: var(--color_secundario);
+    color: var(--color_blanco);
+}
 
 .nosotros{
     height: 200px;
 }
 
 /* --------------Servicios------------------ */
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .text-center{
     text-align: center;
@@ -150,12 +160,16 @@ padding: 40px 0;
 border-radius: 10px;
 }
 
+.card__item--activo{
+background-color: var(--color_primario);
+}
+
 .card__plan{
 margin-bottom: 20px;
 }
 
 .card__precio{
-font-size: 3rem;
+font-size: 2rem;
 margin-bottom: 20px;
 }
 
