@@ -39,6 +39,11 @@ header{
     height: calc(100vh - var(--alto_nav));
 } */
 
+a {
+    text-decoration: none; 
+    color: var(--color_secundario); 
+}
+
 
 .logo{
     height: 50px;
@@ -102,9 +107,7 @@ order: 0;
 flex-basis: 45;
 }
 
-.titulo{
 
-}
 
 .parrafo{
     margin: 20px 0;
@@ -177,4 +180,112 @@ margin-bottom: 20px;
     margin-bottom: 25px;
 }
 
+/*-----------------Galeria-----------------
+ */
 
+ .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+ }
+ .imagen{
+    box-sizing: border-box;
+    width: 30%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin:auto;
+    padding: 0;
+    border: 1px solid #fff;
+ }
+
+ .titulo{
+    text-align: center;
+ }
+
+ .parrafo{
+    text-align: center;
+    margin-bottom: 60px;
+ }
+
+
+ /*----------------------------formulario-------------------------------------- 
+  */
+
+  #formulario {
+    text-align: center;
+    padding: 10px 40px;
+    width: 300px;
+}
+
+
+form label {
+    color: var(--color_blanco); 
+}
+
+.contactenos,
+.texto {
+    text-decoration: none; 
+    color: var(--color_blanco); 
+    text-align: center;
+}
+
+
+.contactenos {
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+.texto {
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color_secundario); 
+    color: var(--color_blanco);
+}
+
+label {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ffffff; 
+    color: #fff; 
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--color_primario); 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
