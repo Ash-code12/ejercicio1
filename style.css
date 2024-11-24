@@ -34,6 +34,8 @@ header{
    position: sticky;
    width: 100%;
    top: 0;
+   z-index: 1000;
+   height: 80px;
 }
 /* section{
     height: calc(100vh - var(--alto_nav));
@@ -219,6 +221,10 @@ margin-bottom: 20px;
     text-align: center;
     padding: 10px 40px;
     width: 300px;
+    padding-top: 100px; 
+    position: relative;
+    z-index: 1;
+    
 }
 
 
@@ -252,7 +258,9 @@ form label {
 form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
+    position: relative;
+    z-index: 10;
 }
 
 input[type="submit"]:hover {
